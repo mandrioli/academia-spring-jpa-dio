@@ -1,3 +1,5 @@
+server.port: 8089
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/dio-academia?useTimezone=true&serverTimezone=UTC&useLegacyDate
@@ -9,3 +11,9 @@ spring:
       ddl-auto: update
     properties:
       hibernate.format_sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
